@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+	<style>
+    body {
+    	font: 24px Helvetica;
+        background: cyan;
+        }
+    #main {
+    	min-height: 800px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row;
+    	}
+    #main > article {
+    	margin: 4px;
+        padding: 5px;
+        background: grey;
+        flex: 3 1 60%;
+        order:2;
+        }
+    #main > nav {
+    	margin: 4px;
+        padding: 5px;
+        background: dark blue;
+        flex: 1 6 20%;
+        order:1;
+        }
+    #main > aside {
+    	margin: 4px;
+        padding: 5px;
+        background: dark blue;
+        flex: 1 6 20%;
+        order:3;
+        }
+    header {
+    	display: block;
+        margin: 4px;
+        padding: 5px;
+        min-height: 100px;
+        background: dark blue;
+        }
+     @media all and (max-width: 640px) {
+     	#main, #page {
+        	flex-direction:column;
+            }
+        #main > article, #main > nav, #main > aside {
+        	order:0;
+            }
 
+	</style>
+</head>
+<body>
+    <nav>nav</nav>
+	<header>header</header>
+   	<div id='main'>
+    <article> article</article>
+        <aside>aside</aside>
+    </div>
+
+</body>
+</html>
