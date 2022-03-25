@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Page Title</title>
-	<style>
-    body {
-    	font: 24px Helvetica;
-        background: cyan;
+    <title>Page Title</title>
+    <style>
+        body {
+            font: 24px Helvetica;
+            background: cyan;
         }
-    button{
-        background: white;
-        margin:4px;
-        padding:5px;
+
+        button {
+            background: white;
+            margin: 4px;
+            padding: 5px;
         }
-  #small{
-    height:200px;
-    }
-    #main {
-    	min-height: 800px;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-flow: row;
-    	}
-    #main > article {
-    	margin: 4px;
-        padding: 5px;
-        background: grey;
-        flex: 3 1 60%;
-        order:2;
+
+        #small {
+            height: 200px;
         }
-    #main > nav {
-    	margin: 4px;
-        padding: 5px;
-        background: dark blue;
-        flex: 1 6 20%;
-        order:1;
+
+        #main {
+            min-height: 800px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-flow: row;
         }
-    #main > aside {
-    	margin: 4px;
-        padding: 5px;
-        background: dark blue;
-        flex: 1 6 20%;
-        order:3;
+
+        #main>article {
+            margin: 4px;
+            padding: 5px;
+            background: grey;
+            flex: 3 1 60%;
+            order: 2;
         }
-    header {
-    	display: block;
-        margin: 4px;
-        padding: 5px;
-        min-height: 100px;
-        background: green;
+
+        #main>nav {
+            margin: 4px;
+            padding: 5px;
+            background: dark blue;
+            flex: 1 6 20%;
+            order: 1;
         }
-     @media all and (max-width: 640px) {
-     	#main, #page {
-        	flex-direction:column;
-            }
-        #main > article, #main > nav, #main > aside {
-        	order:0;
+
+        #main>aside {
+            margin: 4px;
+            padding: 5px;
+            background: dark blue;
+            flex: 1 6 20%;
+            order: 3;
+        }
+		#meni {
+        	margin: 4px;
+            padding: 5px;
+            position: sticky;
+  			top: 0;
+  			background-color: green;
+  			border: 2px solid #4CAF50;
+        }
+        header {
+            display: block;
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            background: green;
+        }
+
+        @media all and (max-width: 640px) {
+
+            #main,
+            #page {
+                flex-direction: column;
             }
 
-	</style>
+            #main>article,
+            #main>nav,
+            #main>aside {
+                order: 0;
+            }
+    </style>
 </head>
+
 <body>
-    <nav><button>Home</button><button>Condo details</button><button>Rates</button><button>Availability</button><button>Booking</button><button>Brochure</button><button>Kauai</button></nav>
-	<header><img id=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG"><img id=small align="right" src="https://travelslovenia.org/wp-content/uploads/2016/06/novo-mesto-panorama-slovenia.jpg"></header>
-   	<div id='main'>
-    <article> article</article>
-        <aside>aside</aside>
+    <nav>
+    	<button>Home</button>
+        <button>Condo details</button>
+        <button>Rates</button>
+        <button>Availability</button>
+        <button>Booking</button>
+        <button>Brochure</button>
+        <button>Kauai</button>
+    </nav>
+    <header>
+        <img id=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
+        <img id=small align="right"
+            src="https://travelslovenia.org/wp-content/uploads/2016/06/novo-mesto-panorama-slovenia.jpg">
+    </header>
+    <div id='main'>
+        <article>
+        	<h1 id="novomesto">Novo mesto</h1>
+        </article>
+        <aside>
+        	<div id="meni">
+        		<ul>
+        		<li><a href="#novomesto">Novo mesto</li>
+        		</ul>
+        	</div>
+        </aside>
     </div>
 
 </body>
+
 </html>
