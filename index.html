@@ -15,8 +15,12 @@
             padding: 5px;
         }
 
-        #small {
+        .small {
             height: 200px;
+            width: 49%;
+            margin-left: 5px;
+            margin-right:0px;
+            margin-top:5px;
         }
 
         #main {
@@ -57,6 +61,7 @@
   			top: 0;
   			background-color: green;
   			border: 2px solid #4CAF50;
+            width:250px;
         }
         header {
             display: block;
@@ -83,17 +88,19 @@
 
 <body>
     <nav>
-    	<button>Home</button>
-        <button>Condo details</button>
-        <button>Rates</button>
-        <button>Availability</button>
-        <button>Booking</button>
-        <button>Brochure</button>
-        <button>Kauai</button>
+    	<div>
+    		<button>Home</button>
+        	<button>Condo details</button>
+        	<button>Rates</button>
+        	<button>Availability</button>
+        	<button>Booking</button>
+        	<button>Brochure</button>
+        	<button>Kauai</button>
+        <div>
     </nav>
     <header>
-        <img id=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
-        <img id=small align="right"
+        <img class=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
+        <img class=small align="right" margin-right="5px"
             src="https://travelslovenia.org/wp-content/uploads/2016/06/novo-mesto-panorama-slovenia.jpg">
     </header>
     <div id='main'>
