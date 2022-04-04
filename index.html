@@ -6,10 +6,10 @@
     <style>
         body {
             font: 24px Helvetica;
-            color:white;
+            color: white;
             background: #3A4454;
-            padding:0;
-            margin:0;
+            padding: 0;
+            margin: 0;
         }
 
         button {
@@ -22,8 +22,8 @@
             height: 200px;
             width: 49%;
             margin-left: 5px;
-            margin-right:0px;
-            margin-top:5px;
+            margin-right: 0px;
+            margin-top: 5px;
         }
 
         #main {
@@ -56,15 +56,17 @@
             flex: 1 6 20%;
             order: 3;
         }
-		#meni {
-        	margin: 4px;
+
+        #meni {
+            margin: 4px;
             padding: 5px;
             position: sticky;
-  			top: 0;
-  			background-color: #C2B2B4;
-  			border: 2px solid #53687E;
-            width:250px;
+            top: 0;
+            background-color: #C2B2B4;
+            border: 2px solid #53687E;
+            width: 250px;
         }
+
         header {
             display: block;
             margin: 4px;
@@ -73,35 +75,43 @@
             background: #C2B2B4;
 
             border-bottom: 2px solid #53687E;
-		}
+        }
 
-        @media all and (max-width: 640px) {
-
-            #main,
-            #page {
-                flex-direction: column;
+         @media all and (max-width: 640px) {
+     	#main, #page {
+        	flex-direction:column;
+            }
+        #main > article, #main > nav, #main > aside {
+        	order:0;
+            }
+        #main >nav, #main > aside, header {
+        	min-height:50px;
+            max-height: 50px;
+            }
+        }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: #f1f1f1;
             }
 
-            #main>article,
-            #main>nav,
-            #main>aside {
-                order: 0;
+            li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #A9FBD7;
+                color: white;
             }
     </style>
 </head>
 
 <body>
-    <nav>
-    	<div>
-    		<button>Home</button>
-        	<button>Condo details</button>
-        	<button>Rates</button>
-        	<button>Availability</button>
-        	<button>Booking</button>
-        	<button>Brochure</button>
-        	<button>Kauai</button>
-        <div>
-    </nav>
     <header>
         <img class=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
         <img class=small align="right" margin-right="5px"
@@ -109,19 +119,22 @@
     </header>
     <div id='main'>
         <article>
-        	<h1 id="straza" style="margin:15px">Straža</h1>
-            <p>informacije o kraju (copy paste text, drugacno oblikovanje), nekaj fotografij, zemljevid (google maps embed), turistcne zanimivosti, nastanitve (zunanji URL), galerija (ustvari drugo stran s podobnim oblikovanjem), zemljevidi poti (zunanja povezava, slike, podobno oblikovana stran)</p>
-            
+            <h1 id="straza" style="margin:15px">Straža</h1>
+            <p>informacije o kraju (copy paste text, drugacno oblikovanje), nekaj fotografij, zemljevid (google maps
+                embed), turistcne zanimivosti, nastanitve (zunanji URL), galerija (ustvari drugo stran s podobnim
+                oblikovanjem), zemljevidi poti (zunanja povezava, slike, podobno oblikovana stran)</p>
+
         </article>
         <aside>
-        	<div id="meni">
-        		<ul>
-        			<li><a href="#straza">O Straži</a></li>
-             		<li><a href="https://www.booking.com">Nastanitve</a></li>
-        	        <li>Galerija</li>
-    	            <li>Turistični vodnik</li>
-	      		</ul>
+            <div id="meni">
+                <ul>
+                    <li><a href="#straza">O Straži</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="http://www.obcina-straza.si/wp-content/uploads/2016/01/turisticni-vodnik-STRAZA-2016_prew5.pdf">Turistični vodnik</a></li>
+                    <li><a href="https://www.booking.com">Nastanitve</a></li>
+                </ul>
         	</div>
+
         </aside>
     </div>
 
