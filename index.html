@@ -6,11 +6,14 @@
     <style>
         body {
             font: 24px Helvetica;
-            background: cyan;
+            color:white;
+            background: #3A4454;
+            padding:0;
+            margin:0;
         }
 
         button {
-            background: white;
+            background: #53687E;
             margin: 4px;
             padding: 5px;
         }
@@ -34,7 +37,7 @@
         #main>article {
             margin: 4px;
             padding: 5px;
-            background: grey;
+            background: #53687E;
             flex: 3 1 60%;
             order: 2;
         }
@@ -42,7 +45,7 @@
         #main>nav {
             margin: 4px;
             padding: 5px;
-            background: dark blue;
+            background: #C2B2B4;
             flex: 1 6 20%;
             order: 1;
         }
@@ -50,7 +53,6 @@
         #main>aside {
             margin: 4px;
             padding: 5px;
-            background: dark blue;
             flex: 1 6 20%;
             order: 3;
         }
@@ -59,8 +61,8 @@
             padding: 5px;
             position: sticky;
   			top: 0;
-  			background-color: green;
-  			border: 2px solid #4CAF50;
+  			background-color: #C2B2B4;
+  			border: 2px solid #53687E;
             width:250px;
         }
         header {
@@ -68,8 +70,10 @@
             margin: 4px;
             padding: 5px;
             min-height: 100px;
-            background: green;
-        }
+            background: #C2B2B4;
+
+            border-bottom: 2px solid #53687E;
+		}
 
         @media all and (max-width: 640px) {
 
@@ -105,17 +109,17 @@
     </header>
     <div id='main'>
         <article>
-        	<h1 id="novomesto" style="margin:15px">Novo mesto</h1>
+        	<h1 id="straza" style="margin:15px">Straža</h1>
             <p>informacije o kraju (copy paste text, drugacno oblikovanje), nekaj fotografij, zemljevid (google maps embed), turistcne zanimivosti, nastanitve (zunanji URL), galerija (ustvari drugo stran s podobnim oblikovanjem), zemljevidi poti (zunanja povezava, slike, podobno oblikovana stran)</p>
             
         </article>
         <aside>
         	<div id="meni">
         		<ul>
-        			<li><a href="#novomesto">O Novem mestu</a></li>
-             		<li><a href="https://www.booking.com/searchresults.sl.html?aid=397594&label=gog235jc-1DCAEoggI46AdII1gDaMsBiAEBmAEjuAEXyAEM2AED6AEB-AECiAIBqAIDuAKa5qqSBsACAdICJDM4NDQxMGMwLTkwYTAtNDFmOC04ZmQwLTZhNmI0N2FlYmM3NtgCBOACAQ&sid=0d41f3653af9f9e6f14669dd8145f47d&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.sl.html%3Faid%3D397594%3Blabel%3Dgog235jc-1DCAEoggI46AdII1gDaMsBiAEBmAEjuAEXyAEM2AED6AEB-AECiAIBqAIDuAKa5qqSBsACAdICJDM4NDQxMGMwLTkwYTAtNDFmOC04ZmQwLTZhNmI0N2FlYmM3NtgCBOACAQ%3Bsid%3D0d41f3653af9f9e6f14669dd8145f47d%3Bsb_price_type%3Dtotal%26%3B&ss=novo+mesto&is_ski_area=0&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=no&search_pageview_id=592e3f0d2798014a">Nastanitve</a></li>
+        			<li><a href="#straza">O Straži</a></li>
+             		<li><a href="https://www.booking.com">Nastanitve</a></li>
         	        <li>Galerija</li>
-    	            <li>Zemljevid peš poti</li>
+    	            <li>Turistični vodnik</li>
 	      		</ul>
         	</div>
         </aside>
