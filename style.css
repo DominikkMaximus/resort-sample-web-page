@@ -1,1 +1,122 @@
+        body {
+            font: 24px Helvetica;
+            color: white;
+            background: #3A4454;
+            padding: 0;
+            margin: 0;
+        }
 
+        button {
+            background: #53687E;
+            margin: 4px;
+            padding: 5px;
+        }
+
+        .small {
+            height: 200px;
+            width: 49%;
+            margin-left: 5px;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
+
+        #main {
+            min-height: 800px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-flow: row;
+        }
+
+        #main>article {
+            margin: 4px;
+            padding: 5px;
+            background: #53687E;
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        #main>nav {
+            margin: 4px;
+            padding: 5px;
+            background: #C2B2B4;
+            flex: 1 6 20%;
+            order: 1;
+        }
+
+        #main>aside {
+            margin: 4px;
+            padding: 5px;
+            flex: 1 6 20%;
+            order: 3;
+        }
+
+        #meni {
+            margin: 4px;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            background-color: #F5DDDD;
+            border: 2px solid #53687E;
+            width: 250px;
+        }
+
+        header {
+            display: block;
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            background: #C2B2B4;
+
+            border-bottom: 2px solid #53687E;
+        }
+       p {
+        	padding-left:2%;
+            padding-right:2%;
+         	text-align: justify;
+        }
+        
+        h1 {
+        	padding-left:1%
+        }
+
+        @media all and (max-width: 640px) {
+
+            #main,
+            #page {
+                flex-direction: column;
+            }
+
+            #main>article,
+            #main>nav,
+            #main>aside {
+                order: 0;
+            }
+
+            #main>nav,
+            #main>aside,
+            header {
+                min-height: 50px;
+                max-height: 50px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #F5DDDD;
+        }
+
+        li a {
+            display: block;
+            color: #3A4454;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #62BBC1;
+            color: black;
+        }
