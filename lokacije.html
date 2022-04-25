@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        body {
+            font: 24px Helvetica;
+            color: white;
+            background: #3A4454;
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            background: #53687E;
+            margin: 4px;
+            padding: 5px;
+        }
+
+        .small {
+            height: 200px;
+            width: 49%;
+            margin-left: 5px;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
+
+        #main {
+            min-height: 800px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-flow: row;
+        }
+
+        #main>article {
+            margin: 4px;
+            padding: 5px;
+            background: #53687E;
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        #main>nav {
+            margin: 4px;
+            padding: 5px;
+            background: #C2B2B4;
+            flex: 1 6 20%;
+            order: 1;
+        }
+
+        #main>aside {
+            margin: 4px;
+            padding: 5px;
+            flex: 1 6 20%;
+            order: 3;
+        }
+
+        #meni {
+            margin: 4px;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            background-color: #F5DDDD;
+            border: 2px solid #53687E;
+            width: 250px;
+        }
+
+        header {
+            display: block;
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            background: #C2B2B4;
+
+            border-bottom: 2px solid #53687E;
+        }
+
+        @media all and (max-width: 640px) {
+
+            #main,
+            #page {
+                flex-direction: column;
+            }
+
+            #main>article,
+            #main>nav,
+            #main>aside {
+                order: 0;
+            }
+
+            #main>nav,
+            #main>aside,
+            header {
+                min-height: 50px;
+                max-height: 50px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #F5DDDD;
+        }
+
+        li a {
+            display: block;
+            color: #3A4454;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #62BBC1;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
+        <img class=small align="right" margin-right="5px"
+            src="https://travelslovenia.org/wp-content/uploads/2016/06/novo-mesto-panorama-slovenia.jpg">
+    </header>
+    <div id='main'>
+        <article>
+            
+        </article>
+        <aside>
+            <div id="meni">
+                <ul>
+                    <li><a href="#straza">O Straži</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a
+                            href="http://www.obcina-straza.si/wp-content/uploads/2016/01/turisticni-vodnik-STRAZA-2016_prew5.pdf">Turistični
+                            vodnik</a></li>
+                    <li><a
+                            href="https://www.booking.com/searchresults.sl.html?label=gen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ&sid=039b4622030dfecc276be20d180ee727&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.sl.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ%3Bsid%3D039b4622030dfecc276be20d180ee727%3Bsb_price_type%3Dtotal%26%3B&ss=Stra%C5%BEa%2C+Dolenjska+%28Lower+Carniola%29%2C+Slovenia&is_ski_area=&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=stra%C5%BEa&ac_position=0&ac_langcode=en&ac_click_type=b&dest_id=-81116&dest_type=city&place_id_lat=45.78&place_id_lon=15.0728&search_pageview_id=810626b395aa025f&search_selected=true&search_pageview_id=810626b395aa025f&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0">Nastanitve</a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+
+</body>
+
+</html>
