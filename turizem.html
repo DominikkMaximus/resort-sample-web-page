@@ -2,139 +2,22 @@
 <html>
 
 <head>
-    <title>Page Title</title>
-    <style>
-        body {
-            font: 24px Helvetica;
-            color: white;
-            background: #3A4454;
-            padding: 0;
-            margin: 0;
-        }
-
-        button {
-            background: #53687E;
-            margin: 4px;
-            padding: 5px;
-        }
-
-        .small {
-            height: 200px;
-            width: 49%;
-            margin-left: 5px;
-            margin-right: 0px;
-            margin-top: 5px;
-        }
-
-        #main {
-            min-height: 800px;
-            margin: 0px;
-            padding: 0px;
-            display: flex;
-            flex-flow: row;
-        }
-
-        #main>article {
-            margin: 4px;
-            padding: 5px;
-            background: #53687E;
-            flex: 3 1 60%;
-            order: 2;
-        }
-
-        #main>nav {
-            margin: 4px;
-            padding: 5px;
-            background: #C2B2B4;
-            flex: 1 6 20%;
-            order: 1;
-        }
-
-        #main>aside {
-            margin: 4px;
-            padding: 5px;
-            flex: 1 6 20%;
-            order: 3;
-        }
-
-        #meni {
-            margin: 4px;
-            padding: 5px;
-            position: sticky;
-            top: 0;
-            background-color: #F5DDDD;
-            border: 2px solid #53687E;
-            width: 250px;
-        }
-
-        header {
-            display: block;
-            margin: 4px;
-            padding: 5px;
-            min-height: 100px;
-            background: #C2B2B4;
-
-            border-bottom: 2px solid #53687E;
-        }
-        
-        p {
-        	padding-left:2%;
-            padding-right:2%;
-         	text-align: justify;
-        }
-        
-        h1 {
-        	padding-left:1%
-        }
-
-        @media all and (max-width: 640px) {
-
-            #main,
-            #page {
-                flex-direction: column;
-            }
-
-            #main>article,
-            #main>nav,
-            #main>aside {
-                order: 0;
-            }
-
-            #main>nav,
-            #main>aside,
-            header {
-                min-height: 50px;
-                max-height: 50px;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background-color: #F5DDDD;
-        }
-
-        li a {
-            display: block;
-            color: #3A4454;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #62BBC1;
-            color: black;
-        }
-    </style>
+    <title>Turizem</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dominik Krašovec" />
+    <meta name="description" content="Spletna stran o obcini Straza namenjena predvsem turistom" />
+    <meta name="keywords" content="Straza, Krka, Slovenjia, Novo mesto, pohod, dogodki, kraj, turizem" />
+    <meta http-equiv="distribution" content="local" />
 </head>
 
 <body>
     <header>
-        <img class=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
-        <img class=small align="right" margin-right="5px"
-            src="https://travelslovenia.org/wp-content/uploads/2016/06/novo-mesto-panorama-slovenia.jpg">
+        <img class=small id="left" src="http://glampingstraza.yolasite.com/resources/straza_jost_gantar_8.jpg.cropped842x328o-94%2C-217s960x640.jpg">
+        <h1 align="center" style="font-size:90px; display: inline;">
+            TURIZEM</h1>
+        <img class=small id="right"
+            src="https://www.kupikolo.si/blog/wp-content/uploads/2020/03/Novo-Mesto_-800x300.jpg">
     </header>
     <div id='main'>
         <article>
@@ -172,7 +55,7 @@
             <p>
                 Še marsikaj drugega se najde na tem majhnem, a bogatem območju. Dobrih razlogov, da obiščete Stražo, je
                 torej več kot dovolj.</p>
-            <h1>VINOGRADNIŠTVO</h1>
+            <h1 id="vinogradnistvo">VINOGRADNIŠTVO</h1>
             <p>Vinska trta pri nas uspeva in daje vino praktično že od nekdaj. Na ozemlju Slovenije se je pojavila že s
                 prihodom prvih naseljencev. Že Kelti so štiri stoletja pred našim štetjem razširjali vinsko trto, ki so
                 jo Rimljani nato še razširili. Za dvig vinogradništva in kakovost vin v srednjem veku so skrbeli
@@ -190,6 +73,7 @@
                 in inšpekcijsko službo do leta 2015, že močno omejili bolezen s škropljenjem in uničevanjem okuženih
                 trt. Ker je bolezen prizadela v večji meri samorodnice so le te nadomestili s trtami žlahtnih sort.
             </p>
+            <img src="https://www.sylvane.com/blog/wp-content/uploads/2016/02/glass-of-wine-with-grapes.png" width="100%" height="500px" loading="lazy">
             <p>Straška, Nova in Stara gora ter Ljuben so naša vinorodna območja, ki spadajo v Posavsko-Dolenjski
                 vinorodni okoliš, kjer je doma cviček. Od tod prihajajo prijetna lahka, rdečkasta in bela vina z
                 izraženo kislino in nežno cvetico.
@@ -218,6 +102,7 @@
                     verjetno je, da na lahko srečate različne divje živali, ki živijo v gozdu. Med pohodom je treba
                     paziti, da jih po nepotrebnem ne vznemirjamo in poskrbeti, da bo naše obnašanje primerno gibanju v
                     naravnemu okolju.</p>
+                    <img src="https://www.slovenia.info/imagine_cache/mobile/uploads/aktivnosti/pohodnistvo/top_hiking_posavje_lisca.jpg" width="100%" height="700px" loading="lazy">
                 <p><strong>Gozdarska pot</strong></p>
                 <p>Je lahka pot, označena s tablami in belo zelenimi krogi na drevesih. Vodi mimo cerkve sv. Tomaža, se
                     nadaljuje mimo vinogradov in nato pelje po strmejših gozdnih poteh in vlakah do jame Velika
@@ -254,6 +139,7 @@
                     prosto letenje - Kanja iz Dolenjskih Toplic. Pot je speljana po zgornji in srednji cesti med
                     vinogradi. Ločita se po približno 500m hoje od železniške postaje. Obe sta označeni s belimi in
                     rdečimi oznakami v obliki padala.</p>
+                    <img src="https://www.obcina-straza.si/wp-content/uploads/2014/04/P1050321.jpg" width="100%" height="900px" loading="lazy">
                 <p><strong>Zgornja pot</strong> se začne strmo v hrib med vinogradi. Kmalu, ko se pot zravna, pridemo do
                     oznak in imamo dve možnosti:</p>
                 <p>1. Pot nadaljujemo naravnost mimo kužnega znamenja in se nato spustimo v dolino in pridemo do
@@ -283,14 +169,22 @@
         <aside>
             <div id="meni">
                 <ul>
-                    <li><a href="#straza">O Straži</a></li>
-                    <li><a href="galerija.html">Galerija</a></li>
-                    <li><a
-                            href="http://www.obcina-straza.si/wp-content/uploads/2016/01/turisticni-vodnik-STRAZA-2016_prew5.pdf">Turistični
-                            vodnik</a></li>
-                    <li><a
-                            href="https://www.booking.com/searchresults.sl.html?label=gen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ&sid=039b4622030dfecc276be20d180ee727&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.sl.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ%3Bsid%3D039b4622030dfecc276be20d180ee727%3Bsb_price_type%3Dtotal%26%3B&ss=Stra%C5%BEa%2C+Dolenjska+%28Lower+Carniola%29%2C+Slovenia&is_ski_area=&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=stra%C5%BEa&ac_position=0&ac_langcode=en&ac_click_type=b&dest_id=-81116&dest_type=city&place_id_lat=45.78&place_id_lon=15.0728&search_pageview_id=810626b395aa025f&search_selected=true&search_pageview_id=810626b395aa025f&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0">Nastanitve</a>
+                    <li><a href="index.html">Straža</a></li>
+                    <li><a href="turizem.html">Turizem</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#turizem">Turizem</a></li>
+                            <li><a href="#vinogradnistvo">Vinogradništvo</a></li>
+                            <li><a href="#pespoti">Pešpoti</a></li>
+                            <li><a
+                                    href="http://www.obcina-straza.si/wp-content/uploads/2016/01/turisticni-vodnik-STRAZA-2016_prew5.pdf">Turistični
+                                    vodnik</a></li>
+                            <li><a
+                                    href="https://www.booking.com/searchresults.sl.html?label=gen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ&sid=039b4622030dfecc276be20d180ee727&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.sl.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ%3Bsid%3D039b4622030dfecc276be20d180ee727%3Bsb_price_type%3Dtotal%26%3B&ss=Stra%C5%BEa%2C+Dolenjska+%28Lower+Carniola%29%2C+Slovenia&is_ski_area=&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=stra%C5%BEa&ac_position=0&ac_langcode=en&ac_click_type=b&dest_id=-81116&dest_type=city&place_id_lat=45.78&place_id_lon=15.0728&search_pageview_id=810626b395aa025f&search_selected=true&search_pageview_id=810626b395aa025f&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0">Nastanitve</a>
+                            </li>
+                        </ul>
                     </li>
+                    <li><a href="dogodki.html">Dogodki</a></li>
                 </ul>
             </div>
 
@@ -300,4 +194,3 @@
 </body>
 
 </html>
-
