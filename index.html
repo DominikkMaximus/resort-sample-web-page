@@ -2,136 +2,27 @@
 <html>
 
 <head>
-    <title>Page Title</title>
-    <style>
-        body {
-            font: 24px Helvetica;
-            color: white;
-            background: #3A4454;
-            padding: 0;
-            margin: 0;
-        }
-
-        button {
-            background: #53687E;
-            margin: 4px;
-            padding: 5px;
-        }
-
-        .small {
-            height: 200px;
-            width: 49%;
-            margin-left: 5px;
-            margin-right: 0px;
-            margin-top: 5px;
-        }
-
-        #main {
-            min-height: 800px;
-            margin: 0px;
-            padding: 0px;
-            display: flex;
-            flex-flow: row;
-        }
-
-        #main>article {
-            margin: 4px;
-            padding: 5px;
-            background: #53687E;
-            flex: 3 1 60%;
-            order: 2;
-        }
-
-        #main>nav {
-            margin: 4px;
-            padding: 5px;
-            background: #C2B2B4;
-            flex: 1 6 20%;
-            order: 1;
-        }
-
-        #main>aside {
-            margin: 4px;
-            padding: 5px;
-            flex: 1 6 20%;
-            order: 3;
-        }
-
-        #meni {
-            margin: 4px;
-            padding: 5px;
-            position: sticky;
-            top: 0;
-            background-color: #F5DDDD;
-            border: 2px solid #53687E;
-            width: 250px;
-        }
-
-        header {
-            display: block;
-            margin: 4px;
-            padding: 5px;
-            min-height: 100px;
-            background: #C2B2B4;
-
-            border-bottom: 2px solid #53687E;
-        }
-
-        @media all and (max-width: 640px) {
-
-            #main,
-            #page {
-                flex-direction: column;
-            }
-
-            #main>article,
-            #main>nav,
-            #main>aside {
-                order: 0;
-            }
-
-            #main>nav,
-            #main>aside,
-            header {
-                min-height: 50px;
-                max-height: 50px;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background-color: #F5DDDD;
-        }
-
-        li a {
-            display: block;
-            color: #3A4454;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #62BBC1;
-            color: black;
-        }
-    </style>
+    <title>Straza</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dominik Krašovec" />
+    <meta name="description" content="Spletna stran o obcini Straza namenjena predvsem turistom" />
+    <meta name="keywords" content="Straza, Krka, Slovenjia, Novo mesto, pohod, dogodki, kraj, turizem" />
+    <meta http-equiv="distribution" content="local" />
 </head>
 
 <body>
     <header>
-        <img class=small src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Novo_mesto_Breg_2.JPG">
-        <img class=small align="right" margin-right="5px"
-            src="https://travelslovenia.org/wp-content/uploads/2016/06/novo-mesto-panorama-slovenia.jpg">
+        <img class=small id="left"
+            src="http://glampingstraza.yolasite.com/resources/straza_jost_gantar_8.jpg.cropped842x328o-94%2C-217s960x640.jpg">
+        <h1 align="center" style="font-size:100px; display: inline;">
+            STRAŽA</h1>
+        <img class=small id="right"
+            src="https://www.kupikolo.si/blog/wp-content/uploads/2020/03/Novo-Mesto_-800x300.jpg">
     </header>
     <div id='main'>
         <article>
-            <h1 id="straza" style="margin:15px">STRAŽA</h1>
-            <p>informacije o kraju (copy paste text, drugacno oblikovanje), nekaj fotografij, zemljevid (google maps
-                embed), turistcne zanimivosti, nastanitve (zunanji URL), galerija (ustvari drugo stran s podobnim
-                oblikovanjem), zemljevidi poti (zunanja povezava, slike, podobno oblikovana stran)</p>
+            <h1 id="oStrazi">O STRAŽI</h1>
             <p>Občina Straža je mlada občina saj je s svojim delovanjem pričela s 01.01.2007. Občina je geografsko
                 zaključena enota, ki zajema 11 vasi oz. naselij: Dolnje Mraševo, Drganja sela, Jurka vas, Loke, Podgora,
                 Potok, Prapreče pri Straži, Rumanja vas, Straža, Vavta vas, Zalog. Vse ozemlje se nahaja v katastrskih
@@ -155,7 +46,9 @@
                 društvo, rafting klub in druga. Občina razpolaga tudi z objekti za rekreativno in športno dejavnost. V
                 sklopu območja občine je letališka steza Letališča Prečna, in nudi možnost razvoja s športno
                 rekreativnega področja.</p>
-            <h2>STATISTIKA</h2>
+            <iframe width="100%" height="800px" src="https://www.youtube.com/embed/1IjV3AUZ4Aw" loading="lazy">
+            </iframe>
+            <h2 id="statistika">STATISTIKA</h2>
             <p>Občina Straža je bila ustanovljena leta 2007 in zajema 11 vasi oz. Naselij: Drganja sela, Jurka vas,
                 Loke, Podgora, Potok, Prapreče pri Straži, Dolnje Mraševo, Rumanja vas, Straža, Vavta vas, Zalog. Občina
                 leži ob reki Krki in meji na naslednje občine: občina Dolenjske Toplice, občina Mirna Peč, občina Novo
@@ -164,8 +57,9 @@
                 prebivalcev in leži na nadmorski višini 179 m. Občina ima letališče s pristajalno stezo dolgo 2000 m za
                 športna letala. Največji hrib v občini je Straška gora z najvišjim vrhom Srobotnik z nadmorsko višino
                 593m.</p>
-            <img class="inBody" src="http://www.obcina-straza.si/wp-content/uploads/2014/04/predstavitev-map.png">
-            <h2>ZGODOVINA</h2>
+            <img class="inBody" src="http://www.obcina-straza.si/wp-content/uploads/2014/04/predstavitev-map.png"
+                loading="lazy">
+            <h2 id="zgodovina">ZGODOVINA</h2>
             <p>Straža z okolico je bila naseljena že v davnini, čeprav je prvič omenjena leta 1250. To ime se je
                 oprijelo naselja pod strmim skalnim pobočjem hriba Straške gore poraščene, pretežno z bukovjem, ki ga
                 bujno prepleta srobotje, od tod tudi ime vrha Srobotnik. V spodnjem predelu ga krasi venec vinogradov z
@@ -216,7 +110,7 @@
                 začela nazadovati in naselji Straža-Vavta vas, ki sta urbano povsem spojeni in tvorita center krajevne
                 skupnosti, sta pristali na repu razvoja najmočnejših središč Dolenjske.</p>
 
-            <h2 id="predstavitev-naselij">Predstavitev naselijPREDSTAVITEV NASELIJ</h2>
+            <h2 id="predstavitev-naselij">PREDSTAVITEV NASELIJ</h2>
             <p><strong>RUMANJA VAS</strong> (70 hišnih številk, 256 prebivalcev, 186 m.n.v.)</p>
             <p>Vas obcestnega značaja ob cesti Novo mesto – Dolenjske Toplice in ob vaški cesti – Ulicah leži na
                 rečni terasi na desni strani reke Krke. Ob jezu na Krki stoji Nosetov mlin, ki ne deluje več, na
@@ -290,10 +184,11 @@
                 ni omenjena, prvi izpričani vir o cerkvi je iz leta 1681.</p>
             <p><strong>DOLENJA STRAŽA</strong> (211 hišnih številk, 448 prebivalcev, 210 m.n.v.)</p>
             <p>Obsega ulice Drča, Dule, Gaj, Novomeška cesta in Podreber. Leži ob cesti Prečna - Straža na prisojnem
-                pobočju Cerovega hriba, pod robom Ajdovske planote. V Brezju je nekdaj delovalo več opekarn, , V
+                pobočju Cerovega hriba, pod robom Ajdovske planote. V Brezju je nekdaj delovalo več opekarna. V
                 jedru naselja stoji podružnična baročna cerkev Vnebovzetja matere božje iz leta 1690. Cerkev je
                 spomenik baročne umetnosti na Dolenjskem in ima status kulturnega spomenika. V Brezju pod vasjo je
                 nekdaj delovalo več opekarn.</p>
+            <img src="dol-staza.jpg" alt="Slika Dolenje Straze " width="100%" height="600" loading="lazy">
             <p><strong>HRUŠEVEC</strong> (26 hišnih številk, 112 prebivalcev, 168 m.n.v.)</p>
             <p>Leži na loki na levem bregu reke Krke ob železnici Novo mesto – Straža in lokalni cesti Zalog –
                 Straža. Sestavljen je iz starega jedra vasi Sp. Hruševec, ki leži pod železniško progo Novo mesto –
@@ -310,14 +205,17 @@
         <aside>
             <div id="meni">
                 <ul>
-                    <li><a href="#straza">O Straži</a></li>
-                    <li><a href="galerija.html">Galerija</a></li>
-                    <li><a
-                            href="http://www.obcina-straza.si/wp-content/uploads/2016/01/turisticni-vodnik-STRAZA-2016_prew5.pdf">Turistični
-                            vodnik</a></li>
-                    <li><a
-                            href="https://www.booking.com/searchresults.sl.html?label=gen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ&sid=039b4622030dfecc276be20d180ee727&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.sl.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEB-AELiAIBqAIDuALmheSSBsACAdICJDgyN2U1NDlhLTAzZTktNDQ5Ny05NTQxLTg3NDJjODZkYmE4NdgCBuACAQ%3Bsid%3D039b4622030dfecc276be20d180ee727%3Bsb_price_type%3Dtotal%26%3B&ss=Stra%C5%BEa%2C+Dolenjska+%28Lower+Carniola%29%2C+Slovenia&is_ski_area=&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=stra%C5%BEa&ac_position=0&ac_langcode=en&ac_click_type=b&dest_id=-81116&dest_type=city&place_id_lat=45.78&place_id_lon=15.0728&search_pageview_id=810626b395aa025f&search_selected=true&search_pageview_id=810626b395aa025f&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0">Nastanitve</a>
+                    <li><a href="index.html">Straža</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#oStrazi">O Straži</a></li>
+                            <li><a href="#statistika">Statistika</a></li>
+                            <li><a href="#zgodovina">Zgodovina</a></li>
+                            <li><a href="#predstavitev-naselij">Predstavitev naselij</a></li>
+                        </ul>
                     </li>
+                    <li><a href="turizem.html">Turizem</a></li>
+                    <li><a href="dogodki.html">Dogodki</a></li>
                 </ul>
             </div>
 
