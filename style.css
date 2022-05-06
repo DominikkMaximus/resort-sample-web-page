@@ -11,9 +11,16 @@ button {
     margin: 4px;
     padding: 5px;
 }
+
 .small {
     height: 200px;
     width: 37%;
+}
+
+#glavni-naslov {
+    font-size: 100px;
+    display: inline;
+    align-content: center;
 }
 
 #left {
