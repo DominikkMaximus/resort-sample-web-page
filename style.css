@@ -95,14 +95,14 @@ header {
         flex-direction: column;
     }
 
-    #main>article,
-    #main>nav,
-    #main>aside {
+    #main article,
+    #main nav,
+    #main aside {
         order: 0;
     }
 
-    #main>nav,
-    #main>aside,
+    #main nav,
+    #main aside,
     header {
         min-height: 50px;
         max-height: 50px;
